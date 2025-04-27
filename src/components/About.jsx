@@ -1,11 +1,8 @@
 // src/components/About.jsx
-
-
 function About() {
   return (
     <>
-     
-      <section className="bg-transparent pt-20 px-8"> {/* Adjusted padding-top */}
+      <section className="bg-transparent pt-20 px-8 mb-12"> {/* Adjusted padding-top and added bottom margin */}
         <div className="max-w-5xl mx-auto text-center">
           {/* Heading */}
           <h1 className="text-5xl font-bold text-green-700 mb-6">About Us</h1>

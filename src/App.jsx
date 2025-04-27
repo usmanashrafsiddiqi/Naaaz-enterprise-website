@@ -1,12 +1,13 @@
 // src/App.js
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"; // Import the Navbar at the top
+import Footer from "./components/Footer"; 
 import Homepage from "./pages/Homepage"; // Main homepage
 import About from "./components/About";
 import FruitsCollection from "./pages/FruitsCollection";
 import VegetablesCollection from './pages/VegetablesCollection';
 import Collection from './pages/Collection';  // Import Collection page
-
+import Contact from "./pages/Contact"; // Import the Contact page
 function App() {
   return (
     <div>
@@ -24,7 +25,9 @@ function App() {
         
         {/* Route for Collection page */}
         <Route path="/collection" element={<Collection />} /> {/* Add this */}
+        <Route path="/contact" element={<Contact />} /> {/* Add route for Contact */}
       </Routes>
+      <Footer/>
     </div>
   );
 }

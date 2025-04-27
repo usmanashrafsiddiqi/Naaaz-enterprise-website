@@ -2,15 +2,12 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  // State to toggle the hamburger menu
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Function to toggle the menu visibility
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Close the menu when a link is clicked
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
@@ -56,7 +53,7 @@ function Navbar() {
           About
         </Link>
         <Link to="/contact" className="font-bold hover:text-yellow-300 transition duration-300 text-lg">
-          Contact
+          Contact {/* Link to Contact page */}
         </Link>
         <Link to="/collection" className="font-bold hover:text-yellow-300 transition duration-300 text-lg">
           Collection
@@ -76,7 +73,7 @@ function Navbar() {
             About
           </Link>
           <Link to="/contact" className="font-bold hover:text-yellow-300 transition duration-300 text-lg" onClick={closeMenu}>
-            Contact
+            Contact {/* Link to Contact page */}
           </Link>
           <Link to="/collection" className="font-bold hover:text-yellow-300 transition duration-300 text-lg" onClick={closeMenu}>
             Collection
