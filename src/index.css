@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
+  }
+  /* Make sure the body tag is targeted directly */
+
+/* Make sure the body tag is targeted directly */
+body {
+  background-color: #d4f1d4; /* Light Green */
+}
+
+  
+  
+  
