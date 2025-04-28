@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"; // Import the Navbar at the top
 import Footer from "./components/Footer"; 
-import Homepage from "./pages/Homepage"; // Main homepage
+import Homepage from "./pages/HomePage"; // Main homepage
 import About from "./components/About";
 import FruitsCollection from "./pages/FruitsCollection";
 import VegetablesCollection from './pages/VegetablesCollection';
