@@ -63,7 +63,7 @@ function Footer() {
               </a>
               {/* Instagram Icon */}
               <a
-                href="https://www.instagram.com/naaz_fruits_veggies/"
+                href="https://www.instagram.com/na.azenterprises?igsh=MzlicDJudXk3cjN1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-yellow-300 transition duration-300 text-3xl"
