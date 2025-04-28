@@ -1,55 +1,42 @@
-import { useState } from "react";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa"; // Importing icons
 
 function Contact() {
-  const [isCardOpen, setIsCardOpen] = useState(false); // State to toggle the card
-
-  // Toggle function for foldable card
-  const toggleCard = () => {
-    setIsCardOpen(!isCardOpen);
-  };
-
   return (
-    <section className="py-12 px-8 bg-transparent-100">
-      {/* Contact Us Heading */}
-      <div className="text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-green-700">Contact Us</h1>
-      </div>
-
-      {/* Office Details Card */}
-      <div className="max-w-lg mx-auto bg-white rounded-lg shadow-xl p-6 transition-all duration-500 ease-in-out">
-        <div className="text-center mb-6">
-          <h2 className="text-3xl font-bold text-green-700">Our Office</h2>
-          <p className="text-lg text-gray-600">Contact us for any inquiries</p>
+    <section className="py-16 px-8 pb-10 min-h-[70vh] flex items-center justify-center"> {/* Reduced height */}
+      <div className="w-full max-w-7xl mx-auto">
+        {/* Main Heading */}
+        <div className="text-center mb-16">
+          <h1 className="text-5xl font-extrabold text-green-700">Get in Touch</h1>
         </div>
 
-        {/* Card Content */}
-        <div className={`overflow-hidden ${isCardOpen ? "h-auto" : "h-20"}`}>
-          <div className="transition-all duration-500">
-            <p className="text-lg font-medium text-gray-700 mb-2">
-              <strong>Address:</strong> Chuchot Shama, Leh, J&K, India
+        {/* Cards Container */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          {/* Address Card */}
+          <div className="bg-blue-500 text-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center border-2 border-white/30 backdrop-blur-md">
+            <FaMapMarkerAlt className="text-5xl mb-6" />
+            <h2 className="text-2xl font-bold mb-4">Address</h2>
+            <p className="text-lg font-medium">
+              Chuchot Shama, Leh, J&K, India
             </p>
-            <p className="text-lg font-medium text-gray-700 mb-4">
-              <strong>Contact Numbers:</strong> 9419644700, 9906675527
+          </div>
+
+          {/* Contact Number Card */}
+          <div className="bg-green-400 text-white rounded-3xl shadow-lg p-8 flex flex-col items-center text-center border-2 border-white/30 backdrop-blur-md">
+            <FaPhoneAlt className="text-5xl mb-6" />
+            <h2 className="text-2xl font-bold mb-4">Contact</h2>
+            <p className="text-lg font-medium mb-2">9419644700</p>
+            <p className="text-lg font-medium">9906675527</p>
+          </div>
+
+          {/* Email Card */}
+          <div className="bg-gray-300 text-green-900 rounded-3xl shadow-lg p-8 flex flex-col items-center text-center border-2 border-white/30 backdrop-blur-md">
+            <FaEnvelope className="text-5xl mb-6" />
+            <h2 className="text-2xl font-bold mb-4">Email</h2>
+            <p className="text-lg font-medium break-words">
+              naazenterprises005@gmail.com
             </p>
           </div>
         </div>
-
-        {/* Toggle Button */}
-        <button 
-          onClick={toggleCard} 
-          className="mt-4 py-2 px-6 bg-green-600 hover:bg-green-700 text-white rounded-lg shadow-md transition duration-300">
-          {isCardOpen ? "Hide Details" : "Show Details"}
-        </button>
-      </div>
-
-      {/* Email Contact Button */}
-      <div className="mt-12 text-center">
-        <p className="text-lg text-gray-700 mb-4">You can contact us via email</p>
-        <a href="mailto:naazenterprises005@gmail.com">
-          <button className="py-2 px-6 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-md transition duration-300">
-            naazenterprises005@gmail.com
-          </button>
-        </a>
       </div>
     </section>
   );

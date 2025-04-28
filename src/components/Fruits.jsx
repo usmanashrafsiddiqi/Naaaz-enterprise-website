@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 function Fruits() {
   const fruits = [
-    { name: "Apple", image: "/fruits/apple.jpg" },
-    { name: "Banana", image: "/fruits/banana.jpg" },
-    { name: "Mango", image: "/fruits/mango.jpg" },
-    { name: "Orange", image: "/fruits/orange.jpg" },
-    { name: "Pineapple", image: "/fruits/pineapple.jpg" },
-    { name: "Grapes", image: "/fruits/grapes.jpg" },
-    { name: "Strawberry", image: "/fruits/strawberry.jpg" },
-    { name: "Watermelon", image: "/fruits/watermelon.jpg" },
-    { name: "Papaya", image: "/fruits/papaya.jpg" },
-    { name: "Kiwi", image: "/fruits/kiwi.jpg" },
+    { name: "Apple", image: "/apple.jpg" },
+    { name: "Banana", image: "/banana.jpg" },
+    { name: "Mango", image: "/mango.jpg" },
+    { name: "Orange", image: "/orange.jpg" },
+    { name: "Pineapple", image: "/Pineapple.jpg" },
+    { name: "Grapes", image: "/grapes.jpg" },
+    { name: "Strawberry", image: "/strawberry.jpg" },
+    { name: "Watermelon", image: "/Watermelon.jpg" },
+    { name: "Papaya", image: "/papaya.jpg" },
+    { name: "Kiwi", image: "/kiwi.jpg" },
   ];
 
   return (
@@ -36,7 +36,7 @@ function Fruits() {
       {/* Scrolling Fruits */}
       <div className="flex space-x-12 animate-scroll px-8 py-12">
         {fruits.map((fruit, index) => (
-          <div key={index} className="flex-shrink-0 w-56">
+          <div key={index} className="flex-shrink-0 w-56 bg-white p-4 rounded-xl shadow-md overflow-hidden">
             <img 
               src={fruit.image} 
               alt={fruit.name} 

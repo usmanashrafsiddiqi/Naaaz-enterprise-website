@@ -12,9 +12,9 @@ function Homepage() {
     <div>
   
       <Header />
-      <About />
       <Fruits />
       <Vegetables />
+      <About />
       <Contact/>
     </div>
   );

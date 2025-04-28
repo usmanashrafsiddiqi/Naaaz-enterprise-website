@@ -1,4 +1,3 @@
-// src/App.js
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar"; // Import the Navbar at the top
 import Footer from "./components/Footer"; 
@@ -8,6 +7,10 @@ import FruitsCollection from "./pages/FruitsCollection";
 import VegetablesCollection from './pages/VegetablesCollection';
 import Collection from './pages/Collection';  // Import Collection page
 import Contact from "./pages/Contact"; // Import the Contact page
+
+// Import WhatsAppWidget component
+import WhatsAppWidget from "./components/WhatsAppWidget";
+
 function App() {
   return (
     <div>
@@ -24,10 +27,15 @@ function App() {
         <Route path="/vegetablescollection" element={<VegetablesCollection />} />
         
         {/* Route for Collection page */}
-        <Route path="/collection" element={<Collection />} /> {/* Add this */}
+        <Route path="/collection" element={<Collection />} />
         <Route path="/contact" element={<Contact />} /> {/* Add route for Contact */}
       </Routes>
-      <Footer/>
+      
+      {/* Footer will appear on every page */}
+      <Footer />
+      
+      {/* WhatsApp Widget will appear on every page */}
+      <WhatsAppWidget />
     </div>
   );
 }

@@ -42,7 +42,7 @@ function Footer() {
               <strong>Email:</strong> <a href="mailto:naazenterprises005@gmail.com" className="text-yellow-300">naazenterprises005@gmail.com</a>
             </p>
             <p className="text-lg mb-2">
-              <strong>Contact Number:</strong> 9419644700, 9906675527
+              <strong>Number:</strong> 9419644700, 9906675527
             </p>
             <p className="text-lg">
               <strong>Address:</strong> Chuchot Shama, Leh, J&K, India
@@ -72,14 +72,8 @@ function Footer() {
                 <FaInstagram />
               </a>
               {/* Twitter Icon */}
-              <a
-                href="https://twitter.com/naaz_fruits"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-white hover:text-yellow-300 transition duration-300 text-3xl"
-              >
-                <FaTwitter />
-              </a>
+              
+              
               {/* WhatsApp Icon */}
               <a
                 href="https://wa.me/9419644700"

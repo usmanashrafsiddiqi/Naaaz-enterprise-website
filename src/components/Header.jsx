@@ -1,11 +1,11 @@
 // src/components/Header.jsx
 function Header() {
   return (
-    <header className="relative w-full h-[90vh] overflow-hidden">
+    <header className="relative w-full h-[70vh] overflow-hidden">
       {/* Video Background */}
       <video 
-        className="absolute top-0 left-0 w-full h-full object-cover" 
-        src="/video.mp4" 
+        className="absolute top-0 left-0 w-full h-[70vh] object-cover" 
+        src="/video1.mp4" 
         autoPlay 
         muted 
         loop 
@@ -13,7 +13,7 @@ function Header() {
       />
       
       {/* Dark Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 flex items-center justify-center">
+      <div className="absolute top-0 left-0 w-full h-[70vh] bg-black bg-opacity-40 flex items-center justify-center">
         {/* Center Text */}
         <div className="text-center px-4">
           <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">

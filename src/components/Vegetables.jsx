@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 
 function Vegetables() {
   const vegetables = [
-    { name: "Carrot", image: "/vegetables/carrot.jpg" },
-    { name: "Broccoli", image: "/vegetables/broccoli.jpg" },
-    { name: "Tomato", image: "/vegetables/tomato.jpg" },
-    { name: "Cucumber", image: "/vegetables/cucumber.jpg" },
-    { name: "Bell Pepper", image: "/vegetables/bellpepper.jpg" },
-    { name: "Spinach", image: "/vegetables/spinach.jpg" },
-    { name: "Potato", image: "/vegetables/potato.jpg" },
-    { name: "Onion", image: "/vegetables/onion.jpg" },
-    { name: "Cauliflower", image: "/vegetables/cauliflower.jpg" },
-    { name: "Green Beans", image: "/vegetables/greenbeans.jpg" },
+    { name: "Carrot", image: "/carrot.jpg" },
+    { name: "Broccoli", image: "/broccoli.jpg" },
+    { name: "Tomato", image: "/tomato.jpg" },
+    { name: "Cucumber", image: "/cucumber.jpg" },
+    { name: "Bell Pepper", image: "/bellpepper.jpg" },
+    { name: "Spinach", image: "/spinach.jpg" },
+    { name: "Potato", image: "/potato.jpg" },
+    { name: "Onion", image: "/onion.jpg" },
+    { name: "Cauliflower", image: "/cauliflower.jpg" },
+    { name: "Green Beans", image: "/greenbeans.jpg" },
   ];
 
   return (
@@ -36,7 +36,7 @@ function Vegetables() {
       {/* Scrolling Vegetables */}
       <div className="flex space-x-12 animate-scroll px-8 py-12">
         {vegetables.map((veg, index) => (
-          <div key={index} className="flex-shrink-0 w-56">
+          <div key={index} className="flex-shrink-0 w-56 bg-white p-4 rounded-xl shadow-md overflow-hidden">
             <img 
               src={veg.image} 
               alt={veg.name} 
