@@ -12,7 +12,10 @@ const WhatsAppWidget = () => {
       rel="noopener noreferrer"
       className="fixed bottom-10 right-10 bg-green-500 rounded-full p-6 shadow-lg transition-transform duration-300 hover:scale-110 z-50"
     >
-      <FaWhatsapp size={70} color="white" />
+      {/* Icon size changes based on screen size */}
+      <FaWhatsapp 
+        className="text-white sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl" 
+      />
     </a>
   );
 };
